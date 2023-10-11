@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    div.flex.flex-col.h-full.justify-center.items-center
+        h1.text-red-800  Bienvenue sur Triskell knowledge
+        img(src="/styles/images/Symbol-200x200px.png" width="180" height="180")
+        form(action='/search' method='GET')
+        input.home-input(autofocus='' placeholder='Rechercher...' type='search' name='q')
