@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    div.flex.flex-col.h-full.justify-center.items-center
+        h1.text-red-800  Triskell knowledge Login
+        form(method="POST", action="/register")
+            label(for="username") Nom d'utilisateur:
+            input(type="text" id="username" name="username" required).p-2.rounded-lg.border-2
+            label(for="password") Mot de passe:
+            input(type="password" id="password" name="password" required).p-2.rounded-lg.border-2
+            label(for="password") Ré saisir le mot de passe:
+            input(type="password" id="repassword" name="repassword" required).p-2.rounded-lg.border-2
+            button(type="Join").mt-4.rounded-full.bg-green-500.text-white.p-3 rejoindre
