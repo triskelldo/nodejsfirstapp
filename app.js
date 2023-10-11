@@ -40,7 +40,7 @@ app.use(passport.session());
         if(!username || !password) {
             return done(null, false)
         } else {
-            return done(null, user)
+            return done(null, username)
         }
     }
 ));
