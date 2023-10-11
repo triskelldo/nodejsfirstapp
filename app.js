@@ -54,8 +54,10 @@ passport.serializeUser((user, done) => {
 passport.deserializeUser((id, done) => {
 // Ici, récupérez l'utilisateur en utilisant l'ID de session
 // et appelez done(null, utilisateur) ou done(null, false) si l'utilisateur n'existe pas
-    const utilisateur = { id: "tt" };
-    done(null, utilisateur);
+    /*const utilisateur = { id: "tt" };
+    done(null, utilisateur);*/
+    const fakeUser = { id: 1, username: "john", password: "johndoe" };
+  done(null, fakeUser);
 });
 
 // Votre route d'authentification
